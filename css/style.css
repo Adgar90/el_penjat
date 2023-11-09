@@ -1,0 +1,23 @@
+
+p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.start{
+  background-color: green;
+  color: white;
+}
+.stat {
+  background-color: cyan;
+}
+.btn {
+  border-radius: 6px;
+}
+button {
+  margin: 2px;
+  border-radius: 6px;
+}
+button:hover {
+  background-color: orange;
+}

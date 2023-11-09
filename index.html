@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>El penjat</title>
 </head>
-<body onload="iniciaJoc()">
-    <button onclick="" style="background-color: green; color: white;">Iniciar una partida</button>
-    <button style="background-color: cyan;">Estadístiques</button>
-    <div id="jocPenjat"></div>
+<body>
+    <div id="jocPenjat">
+        <button onclick="novaPartida()">Iniciar una partida</button>
+        <button onclick="mostraStats()">Estadístiques</button>
+    </div>
     <div id="abecedari"></div>
     <img src="" id="imatgePenjat"/>
     <div id="lletresUtilitzades"></div>
