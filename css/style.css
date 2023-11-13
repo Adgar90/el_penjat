@@ -1,7 +1,32 @@
-
-p {
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button {
+  font-size: 15px;
+  padding: 10px;
+}
+#abecedari > button {
+  width: 50px;
+  height: 50px;
+}
+#jocPenjat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+#abecedari, #imgPenjat, #lletresUtilitzades {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#imatgePenjat {
+  margin: 30px;
+  width: 15%;
+}
+p, #lletresUtilitzades {
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
 }
 .start{
