@@ -46,9 +46,9 @@ function clickLletra(lletra) {
             encriptada[i] = lletra;
         }
     }
+    esLletraCorrecta(paraula, lletra);
     escriuParaula();
     escriuIntents(); 
-    esLletraCorrecta(paraula, lletra);
     sumaLletraUtilitzada(lletra);
 
     // comprovem si la paraula ha estat encertada
@@ -118,7 +118,6 @@ function sumaLletraUtilitzada(lletra) {
 }
 // mostra intents
 function escriuIntents() {
-    intents--;
     document.getElementById("intents").textContent = `Intents: ${intents}`;
 }
 // funcio per deshabilitar els butons un cop s'ha guanyat o perdut
@@ -140,6 +139,7 @@ function esLletraCorrecta(paraula, lletra) {
     if (encertada) {
         document.getElementById(lletra).style.backgroundColor = "green";
     } else {
+        intents--;
         document.getElementById(lletra).style.backgroundColor = "red";
         setPosicioPenjat(posicioPenjat);
         posicioPenjat++;
