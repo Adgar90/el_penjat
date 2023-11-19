@@ -24,7 +24,7 @@ button {
   margin: 30px;
   width: 15%;
 }
-p, #lletresUtilitzades {
+p, #lletresUtilitzades, #intents {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
